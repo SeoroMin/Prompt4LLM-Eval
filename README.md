@@ -20,10 +20,10 @@ Highest performance when prompt is configured similarly to a human annotation in
 |**Human**|**0.3472**|**0.4468**|
 |Model|0.2864|0.3844|
 |BaSE|0.2746|0.3891|
-- Human: Prompt consisting of human annotation instructions
-- Model : The evaluation prompt used for GPT4
-- Baseline : Task description and Score guide
-
+- *Human: Prompt consisting of human annotation instructions*
+- *Model : The evaluation prompt used for GPT4*
+- *Baseline : Task description and Score guide*
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 **2) Score Aggregation**
 The direct generation method had the highest performance, and the approximation method had poor performance due to noise during sampling. <br>
