@@ -10,7 +10,7 @@ This is the Source Code of Paper: Which is better? [Exploring Prompting Strategy
 
 
 # Usage
-Setting up an experimental environment
+**Setting up an experimental environment**
 ```
 conda create --name Eval4NLP23 python=3.10
 conda activate Eval4NLP23
@@ -18,12 +18,12 @@ conda activate Eval4NLP23
 pip install -r requirements
 ```
 
-Run Experiment with vllm
+**Run Experiment with vllm**
 ```
 ./scripts/inference_vllm.sh
 ```
 
-Run Experiment with Guidance
+**Run Experiment with Guidance**
 ```
 ./scripts/inference_guidance.sh
 ```
