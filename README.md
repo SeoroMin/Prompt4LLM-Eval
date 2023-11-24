@@ -1,10 +1,10 @@
 # Prompt4LLM-Eval
 
-This is the Source Code of Paper: [Which is better? Exploring Prompting Strategy For LLM-based Metrics](https://arxiv.org/abs/2311.03754)
+This is the Source Code of Paper: [Which is better? Exploring Prompting Strategy For LLM-based Metrics](https://arxiv.org/abs/2311.03754).
 
 
 # What is Prompt4LLM-Eval?
-Prompt4LLM-Eval is a methodology that analyzes LLM-based assessment methods by decomposing them into three components: Prompt Strategy, Score Aggregation, Explainability <br>
+Prompt4LLM-Eval is a methodology that analyzes LLM-based assessment methods by decomposing them into three components: Prompt Strategy, Score Aggregation, Explainability. <br>
 
 We won the summarization track at the [AACL-Eval4NLP workshop](https://eval4nlp.github.io/2023/shared-task.html) with this methodology.
 
