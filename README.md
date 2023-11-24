@@ -16,8 +16,8 @@ For detailed experimental results, please refer to the paper. <br>
 - *Dataset : Summeval dev set*
 - *Metric : Kendall's tau correlation to measure similarity to human scores*
 
-**1) Prompt Strategy**
-Highest performance when prompt is configured similarly to a human annotation instruction <br>
+**1) Prompt Strategy**<br>
+The highest performance is achieved when the prompt is configured similarly to human annotation instructions. <br>
 ||Orca-7B|Orca-13B|
 |---|---|---|
 |**Human**|**0.3472**|**0.4468**|
@@ -27,8 +27,8 @@ Highest performance when prompt is configured similarly to a human annotation in
 - *Model : The evaluation prompt used for GPT4*
 - *Baseline : Task description and Score guide*
 
-**2) Score Aggregation**
-The direct generation method had the highest performance, and the approximation method had poor performance due to noise during sampling. <br>
+**2) Score Aggregation**<br>
+The direct generation method achieved the highest performance, while the approximation method exhibited low performance due to noise introduced during sampling. <br>
 ||Orca-7B|Orca-13B|
 |---|---|---|
 |**Direct**|**0.3472**|**0.4468**|
@@ -38,8 +38,8 @@ The direct generation method had the highest performance, and the approximation 
 - *Logprob : weighted sum based on 1~5 token probability*
 - *Approximation : Calculate the average after sampling the evaluation score N times*
 
-**3) Explainability**
-When we configured Prompt to ask LLM to generate a rationale, we found that they had the ability to provide a rationale correctly, and hallucinations were reduced when they provided a high quality example. <br>
+**3) Explainability**<br>
+When we configured the prompt to ask the LLM to generate a rationale, we found that it had the ability to provide a correct rationale. Additionally, hallucinations were reduced when the LLM was provided with a high-quality example. <br>
 ||Base|Reason-best|
 |---|---|---|
 |**Good**|**50%**|**69%**|
