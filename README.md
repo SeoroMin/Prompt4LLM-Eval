@@ -15,7 +15,11 @@ For detailed experimental results, see the paper <br>
 
 **1) Prompt Strategy**
 Highest performance when prompt is configured similarly to a human annotation instruction <br>
-
+||Orca-7B|Orca-13B|
+|---|---|---|
+|**Human**|**0.3472**|**0.4468**|
+|Model|0.2864|0.3844|
+|BaSE|0.2746|0.3891|
 - Human: Prompt consisting of human annotation instructions
 - Model : The evaluation prompt used for GPT4
 - Baseline : Task description and Score guide
@@ -23,14 +27,21 @@ Highest performance when prompt is configured similarly to a human annotation in
 
 **2) Score Aggregation**
 The direct generation method had the highest performance, and the approximation method had poor performance due to noise during sampling. <br>
-
+|제목|내용|설명|
+|---|---|---|
+|Human|0.3472|0.4468|
+|Model|0.2864|0.3844|
+|BaSE|0.2746|0.3891|
 - Direct: A scoring method that uses the score you create as is
 - Logprob : weighted sum based on 1~5 token probability
 - Approximation : Calculate the average after sampling the evaluation score N times
 
 **3) Explainability**
 When we configured Prompt to ask LLM to generate a rationale, we found that they had the ability to provide a rationale correctly, and hallucinations were reduced when they provided a high quality example. <br>
-
+|제목|내용|설명|
+|---|---|---|
+|테스트1|*강조1*|테스트3|
+|테스트1|**강조2**|테스트3|
 - Good : Score and rationale match source text and hypothesis text
 - Complex : Score and rationale are different
 - Hallucination : When the contents of the source text and hypothesis text are not matched
