@@ -97,9 +97,8 @@ def generate_score(model, prompt_list, sampling_params, score_func, explanation=
         
         for output in outputs:
             for n in range(5):
-                # 첫번째 토큰 logprob 할당
+                # first token logprobability
                 log_prob_dict = output.outputs[0].logprobs[0]
-                # 토큰 생성확률 중 제일 높은 것이 score_token_id에 포함되어 있으면 해당 위치의 logprob 할당, 그렇지 않으면 첫번째 토큰의 logprob gkfekd
                 if list(output.outputs[0].logprobs[n].keys())[0] in list(score_token_id.values()):
                     log_prob_dict = output.outputs[0].logprobs[n]
                     break
@@ -121,7 +120,6 @@ def generate_score(model, prompt_list, sampling_params, score_func, explanation=
             sampling_list = []
             for output_text in output.outputs:
                 sampling_list.append(output_text.text)
-            # sampling_parse_list = [parse_output(x) for x in sampling_list]
             
             parse = [parse_output(x) for x in sampling_list]
             extract = [extract_score(x) for x in sampling_list]
@@ -135,10 +133,6 @@ def generate_score(model, prompt_list, sampling_params, score_func, explanation=
             score_list.append(np.mean(np.array(sampling_parse_list)))
             
         return score_list
-
-
-
-
 
 # guidance
 def scoring(res, num_outputs, calculation_method, aspects):
@@ -179,8 +173,6 @@ def correlation_result(res_scores, ref_scores):
     return output_dict 
 
     
-    
-
 def plot_histogram(vars_list, colors_list, labels_list, bins=20, figsize=(5, 3), title='Distribution', xlabel='Value', ylabel='Count'):
     """
     Plots histograms for each variable in vars_list.

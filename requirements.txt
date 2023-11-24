@@ -1,0 +1,12 @@
+--index-url https://download.pytorch.org/whl/cu118
+torch
+torchvision
+torchaudio
+
+--index-url https://pypi.python.org/simple
+https://github.com/PanQiWei/AutoGPTQ/releases/download/v0.3.2/auto_gptq-0.3.2+cu118-cp310-cp310-linux_x86_64.whl
+guidance
+sentencepiece
+protobuf
+bitsandbytes
+scipy
