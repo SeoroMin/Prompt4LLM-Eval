@@ -10,7 +10,7 @@ The methodology won the [AACL-Eval4NLP Workshop summarization track](https://eva
 
 # Key findings
 For detailed experimental results, see the paper <br>
-- **Dataset** : Summeval
+- **Dataset** : Summeval dev set
 - **Metric** : Kendall's tau correlation to measure similarity to human scores
 **1) Prompt Strategy**
 
