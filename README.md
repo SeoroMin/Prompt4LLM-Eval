@@ -38,11 +38,11 @@ The direct generation method had the highest performance, and the approximation 
 
 **3) Explainability**
 When we configured Prompt to ask LLM to generate a rationale, we found that they had the ability to provide a rationale correctly, and hallucinations were reduced when they provided a high quality example. <br>
-||Orca-7B|Orca-13B|
+||Base|Reason-best|
 |---|---|---|
-|Good|50%|69%|
+|**Good**|**50%**|**69%**|
 |Inconsistent|11%|17%|
-|Hallucination|36%|6%|
+|**Hallucination**|**36%**|**6%**|
 |Different Aspect|6%|8%|
 - Good : Score and rationale match source text and hypothesis text
 - Complex : Score and rationale are different
