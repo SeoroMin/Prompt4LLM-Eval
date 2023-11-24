@@ -9,7 +9,11 @@ Prompt4LLM-Eval is a methodology that analyzes LLM-based assessment methods into
 The methodology won the [AACL-Eval4NLP Workshop summarization track](https://eval4nlp.github.io/2023/shared-task.html).
 
 # Key findings
+For detailed experimental results, see the paper <br>
+- **Dataset** : Summeval
+- **Metric** : Kendall's tau correlation to measure similarity to human scores
 **1) Prompt Strategy**
+
 
 
 **2) Score Aggregation**
