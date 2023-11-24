@@ -57,12 +57,12 @@ conda install pip
 pip install -r requirements.txt
 ```
 
-**Run Experiment with vllm**
+**Running Experiment with vllm**
 ```
 ./scripts/inference_vllm.sh
 ```
 
-**Run Experiment with Guidance**
+**Running Experiment with Guidance**
 ```
 ./scripts/inference_guidance.sh
 ```
