@@ -51,8 +51,8 @@ When we configured the prompt to ask the LLM to generate a rationale, we found t
 # Usage
 **Setting up an experimental environment**
 ```
-conda create --name Eval4NLP23 python=3.10
-conda activate Eval4NLP23
+conda create --name Prompt4LLM_Eval python=3.10
+conda activate Prompt4LLM_Eval
 conda install pip
 pip install -r requirements.txt
 ```
