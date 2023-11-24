@@ -32,9 +32,9 @@ The direct generation method had the highest performance, and the approximation 
 |**Direct**|**0.3472**|**0.4468**|
 |Logprob|0.3296|0.4210|
 |Approximation|0.3239|0.4002|
-- Direct: A scoring method that uses the score you create as is
-- Logprob : weighted sum based on 1~5 token probability
-- Approximation : Calculate the average after sampling the evaluation score N times
+- *Direct: A scoring method that uses the score you create as is*
+- *Logprob : weighted sum based on 1~5 token probability*
+- *Approximation : Calculate the average after sampling the evaluation score N times*
 
 **3) Explainability**
 When we configured Prompt to ask LLM to generate a rationale, we found that they had the ability to provide a rationale correctly, and hallucinations were reduced when they provided a high quality example. <br>
@@ -44,10 +44,10 @@ When we configured Prompt to ask LLM to generate a rationale, we found that they
 |Inconsistent|11%|17%|
 |**Hallucination**|**36%**|**6%**|
 |Different Aspect|6%|8%|
-- Good : Score and rationale match source text and hypothesis text
-- Complex : Score and rationale are different
-- Hallucination : When the contents of the source text and hypothesis text are not matched
-- Different Aspect : Explanation for another aspect other than the one in question
+- *Good : Score and rationale match source text and hypothesis text*
+- *Complex : Score and rationale are different*
+- *Hallucination : When the contents of the source text and hypothesis text are not matched*
+- *Different Aspect : Explanation for another aspect other than the one in question*
 
 # Usage
 **Setting up an experimental environment**
