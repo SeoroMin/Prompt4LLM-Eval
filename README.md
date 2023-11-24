@@ -14,13 +14,27 @@ For detailed experimental results, see the paper <br>
 - **Metric** : Kendall's tau correlation to measure similarity to human scores
 
 **1) Prompt Strategy**
+Highest performance when prompt is configured similarly to a human annotation instruction <br>
 
+- Human: Prompt consisting of human annotation instructions
+- Model : The evaluation prompt used for GPT4
+- Baseline : Task description and Score guide
 
 
 **2) Score Aggregation**
+The direct generation method had the highest performance, and the approximation method had poor performance due to noise during sampling. <br>
 
+- Direct: A scoring method that uses the score you create as is
+- Logprob : weighted sum based on 1~5 token probability
+- Approximation : Calculate the average after sampling the evaluation score N times
 
 **3) Explainability**
+When we configured Prompt to ask LLM to generate a rationale, we found that they had the ability to provide a rationale correctly, and hallucinations were reduced when they provided a high quality example. <br>
+
+- Good : Score and rationale match source text and hypothesis text
+- Complex : Score and rationale are different
+- Hallucination : When the contents of the source text and hypothesis text are not matched
+- Different Aspect : Explanation for another aspect other than the one in question
 
 # Usage
 **Setting up an experimental environment**
