@@ -4,7 +4,8 @@ This is the Source Code of Paper: Which is better? [Exploring Prompting Strategy
 
 
 # What is Prompt4LLM-Eval?
-
+Prompt4LLM-Eval is a methodology that analyzes LLM-based assessment methods into three components: Prompt Strategy, Score Aggregation, and Explainability.
+The methodology won the AACL-Eval4NLP Workshop summarization track.
 
 # Key findings
 
