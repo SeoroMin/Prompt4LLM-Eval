@@ -41,8 +41,8 @@ When we configured Prompt to ask LLM to generate a rationale, we found that they
 ```
 conda create --name Eval4NLP23 python=3.10
 conda activate Eval4NLP23
-#conda install pip
-pip install -r requirements
+conda install pip
+pip install -r requirements.txt
 ```
 
 **Run Experiment with vllm**
