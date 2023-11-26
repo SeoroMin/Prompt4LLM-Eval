@@ -35,19 +35,6 @@ The direct generation method achieved the highest performance, while the approxi
 - *Logprob : weighted sum based on 1~5 token probability*
 - *Approximation : Calculate the average after sampling the evaluation score N times*
 
-**3) Explainability**<br>
-When we configured the prompt to ask the LLM to generate a rationale, we found that it had the ability to provide a correct rationale. Additionally, hallucinations were reduced when the LLM was provided with a high-quality example. <br>
-||Base|Reason-best|
-|---|---|---|
-|**Good**|**50%**|**69%**|
-|Inconsistent|11%|17%|
-|**Hallucination**|**36%**|**6%**|
-|Different Aspect|6%|8%|
-- *Good : Score and rationale match source text and hypothesis text*
-- *Complex : Score and rationale are different*
-- *Hallucination : When the contents of the source text and hypothesis text are not matched*
-- *Different Aspect : Explanation for another aspect other than the one in question*
-
 # Usage
 **Setting up an experimental environment**
 ```
